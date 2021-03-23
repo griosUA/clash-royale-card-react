@@ -1,0 +1,10 @@
+.layout {
+    height: 100vh;
+    background-color: #efefef;
+}
+
+.layout main {
+    display: flex;
+    justify-content: center;
+    max-width: 960px;
+}
