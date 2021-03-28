@@ -145,9 +145,9 @@ class MainCard extends React.Component {
          * init first item to show
          */
         this.setState({
-            itemToShow: this.state.archers.stats[0],
-            currentIndex: 0
+            itemToShow: this.state.archers.stats[0]
         })
+        console.log('init currentIndex', this.state.currentIndex)
     }
 
     render() {
