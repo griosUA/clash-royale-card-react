@@ -1,0 +1,41 @@
+.main-info-item {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid grey;
+    border-radius: 8px;
+    padding: 0 10px;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+}
+
+.icon-container img {
+    width: 36px;
+}
+
+.icon-container p {
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+.main-info-value {
+    display: flex;
+    align-items: center;
+}
+
+.main-info-value span {
+    font-weight: bold;
+    color: darkslateblue;
+}
+
+
+.card-stats-info {
+
+}
+
+.btn-container{
+    display: flex;
+    justify-content: space-around;
+}

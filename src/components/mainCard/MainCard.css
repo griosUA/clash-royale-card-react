@@ -17,44 +17,12 @@
     width: 70%;
 }
 
-.icon-container {
-    display: flex;
-    align-items: center;
-}
-
-.icon-container img {
-    width: 36px;
-}
-
-.main-info-item {
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid grey;
-    border-radius: 8px;
-    padding: 0 10px;
-}
-
-.icon-container p {
-    margin-left: 5px;
-    font-weight: bold;
-}
-
 .card-list {
     margin: 0 10px;
 }
 
 .card-list li {
     margin: 10px 0;
-}
-
-.main-info-value {
-    display: flex;
-    align-items: center;
-}
-
-.main-info-value span {
-    font-weight: bold;
-    color: darkslateblue;
 }
 
 .stats h4 {
