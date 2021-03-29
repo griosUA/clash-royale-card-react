@@ -122,7 +122,6 @@ class MainCard extends React.Component {
             this.setState({
                 itemToShow: this.state.archers.stats[this.state.currentIndex]
             })
-              console.log('currentIndex getNext', this.state.currentIndex)
         }
 
 
@@ -136,24 +135,21 @@ class MainCard extends React.Component {
             this.setState({
                 itemToShow: this.state.archers.stats[this.state.currentIndex]
             })
-            console.log('currentIndex getPrev', this.state.currentIndex)
         }
     }
 
-    componentWillMount() {
+    componentDidMount() {
         /**
          * init first item to show
          */
         this.setState({
             itemToShow: this.state.archers.stats[0]
         })
-        console.log('init currentIndex', this.state.currentIndex)
     }
 
     render() {
-        console.log('currentIndex render', this.state.currentIndex)
         const archerData = this.state.archers;
-        const itemToShow = this.state.itemToShow;
+        const itemToShow = this.state.archers.stats[this.state.currentIndex];
         const staticInfo = Object.values(archerData.staticInfo).map((rd, i) => {
             return <li key={i}>
                 <MainInfoItem mainInfo={rd}/>
@@ -192,8 +188,8 @@ class MainCard extends React.Component {
                     </div>
 
                     <div className={'btn-container'}>
-                        <button onClick={this.getNext}>Next</button>
                         <button onClick={this.getPrev}>Prev</button>
+                        <button onClick={this.getNext}>Next</button>
                     </div>
 
                 </div>
